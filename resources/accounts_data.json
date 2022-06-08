@@ -1,0 +1,38 @@
+{
+    "snapchat": {
+        "type": "regex",
+        "regex_match": "(?:\ud83d\udc7b|snapchat ?-?\u2014?|snap-?|(?<![</e;])sc [ -]?):?\\s?([a-zA-Z0-9_.-]+)"
+    },
+    "twitch": {
+        "type": "regex",
+        "regex_match": "(?:(?:www.)?twitch.(?:com|tv)/)([a-zA-Z0-9_.-]+)"
+    },
+    "venmo": {
+        "type": "regex",
+        "regex_match": "(?:(?<![#\"])venmo):?\\s?([a-zA-Z0-9_.-]+)"
+    },
+    "linktree": {
+        "type": "regex",
+        "regex_match": "(?:https(?:%3A%2F%2F|://)linktr\\.ee(?:%2F|/)):?\\s?([a-zA-Z0-9_.-]+)"
+    },
+    "youtube":{
+        "type": "regex",
+        "regex_match": "(?:https%3A%2F%2Fyoutu\\.be%2F):?\\s?([a-zA-Z0-9_.-]+)"
+    },
+    "instagram": {
+        "type": "regex",
+        "regex_match": "(?:instagram|insta(?: -)?|IG ?)[:@\\s]+?([a-zA-Z0-9_.-]+)"
+    },
+    "discord": {
+        "type": "regex",
+        "regex_match": "(?:https%3A%2F%2Fdiscord.gg%2F):?\\s?([a-zA-Z0-9_.-]+)"
+    },
+    "linkfly": {
+        "type": "regex",
+        "regex_match": "(?:https%3A%2F%2Flinkfly\\.to%2F):?\\s?([a-zA-Z0-9_.-]+)"
+    },
+    "tiktok": {
+        "type": "regex",
+        "regex_match": "(?:tiktok is )@?([a-zA-Z0-9_.-]+)"
+    }
+}

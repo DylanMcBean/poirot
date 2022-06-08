@@ -1,0 +1,104 @@
+{
+    "Instagram": {
+        "main_url": "https://www.instagram.com/{}/feed",
+        "url": "https://www.instagram.com/{}/feed",
+        "error_type": "status",
+        "error_value": 404,
+        "has_bio": true,
+        "bio_type": "script",
+        "bio_search_text": "application/ld+json",
+        "extra_information": {
+            "private": {
+                "type": "regex",
+                "regex_match": "(?<=\"is_private\":)\\w+"
+            },
+            "full name": {
+                "type": "regex",
+                "regex_match": "(?<=\"full_name\":\").+?(?=\")"
+            },
+            "pronouns": {
+                "type": "regex",
+                "regex_match": "(?<=,\"pronouns\":\\[).*?(?=\\])"
+            }
+        }
+    },
+    "Tik Tok": {
+        "main_url": "https://www.tiktok.com/@{}",
+        "url": "https://www.tiktok.com/@{}",
+        "error_type": "status",
+        "error_value": 404,
+        "has_bio": true,
+        "bio_type": "class",
+        "bio_search_text": "tiktok-1g04lal-DivShareLayoutHeader-StyledDivShareLayoutHeaderV2 efojldo2"
+    },
+    "Twitter": {
+        "main_url": "https://twitter.com/{}",
+        "url": "https://nitter.net/{}",
+        "error_type": "status",
+        "error_value": 404,
+        "has_bio": true,
+        "bio_type": "class",
+        "bio_search_text": "profile-tabs"
+    },
+    "Facebook": {
+        "main_url": "https://www.facebook.com/{}",
+        "url": "https://www.facebook.com/{}/about",
+        "error_type": "message_group",
+        "error_value": ["<title>Log in to Facebook | Facebook</title>","<title>Page Not Found</title>"],
+        "has_bio": false
+    },
+    "Medium": {
+        "main_url": "https://medium.com/@{}",
+        "url": "https://medium.com/@{}",
+        "error_type": "message_group",
+        "has_bio": false,
+        "error_value": ["<title data-rh=\"true\">Medium</title>","<title data-rh=\"true\">410 account suspended — Medium</title>"],
+        "extra_information": {
+            "name": {
+                "type": "regex",
+                "regex_match": "(?<=<title data-rh=\"true\">).+?(?=Medium</title>)"
+            }
+        }
+    },
+    "Reddit": {
+        "main_url": "https://www.reddit.com/user/{}",
+        "url": "https://www.reddit.com/user/{}",
+        "error_type": "message",
+        "error_value": "<title>Reddit - Dive into anything</title>",
+        "has_bio": false,
+        "extra_information": {
+            "cake day": {
+                "type": "regex",
+                "regex_match": "(?<=cakeday\" class=\"_1hNyZSklmcC7R_IfCUcXmZ\">).+?(?=</span>)"
+            }
+        }
+    },
+    "Hacker News": {
+        "main_url": "https://news.ycombinator.com/user?id={}",
+        "url": "https://news.ycombinator.com/user?id={}",
+        "error_type": "message",
+        "error_value": "No such user",
+        "has_bio": false
+    },
+    "Github": {
+        "main_url": "https://github.com/{}",
+        "url": "https://github.com/{}",
+        "error_type": "status",
+        "error_value": 404,
+        "has_bio": false
+    },
+    "Quora": {
+        "main_url": "https://www.quora.com/profile/{}",
+        "url": "https://www.quora.com/profile/{}",
+        "error_type": "status",
+        "error_value": 404,
+        "has_bio": false
+    },
+    "VK": {
+        "main_url": "https://vk.com/{}",
+        "url": "https://vk.com/{}",
+        "error_type": "status",
+        "error_value": 404,
+        "has_bio": false
+    }
+}
