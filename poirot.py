@@ -64,9 +64,6 @@ def has_error(item,site_data,response):
 def get_extra_content(username, item, site_data, json_accounts_data, response):
 	beautiful_responce_content = bs4.BeautifulSoup(response.text, "html.parser")
 	
-	if item == "Twitter":
-		breakpoint
-	
 	try:
 		extra_print_text = ""
 		if "extra_information" in site_data or site_data["has_bio"]: # Get extra info from responce data
