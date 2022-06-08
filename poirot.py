@@ -23,7 +23,7 @@ def main():
 	print(f"Poirot Version: {__version__}\n{module_name}\n{top_art}") # print module information
 	
 	# get username from args
-	username = "Tiffany_Douglas"#sys.argv[1]
+	username = sys.argv[1]
 	curr_working_dir = os.path.join(os.path.dirname(__file__))
 	
 	json_site_data = json.load(open(f"{curr_working_dir}/resources/site_data.json"))
