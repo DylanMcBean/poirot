@@ -100,5 +100,33 @@
         "error_type": "status",
         "error_value": 404,
         "has_bio": false
+    },
+    "Twitch": {
+        "main_url": "https://www.twitch.tv/{}",
+        "url": "https://www.twitch.tv/{}",
+        "error_type": "status",
+        "error_value": 404,
+        "has_bio": false
+    },
+    "Pinterest": {
+        "main_url": "https://www.pinterest.com/{}",
+        "url": "https://www.pinterest.com/{}",
+        "error_type": "status",
+        "error_value": 404,
+        "has_bio": false
+    },
+    "Internet Archive": {
+        "main_url": "https://archive.org/details/@{}",
+        "url": "https://archive.org/details/@{}",
+        "error_type": "status",
+        "error_value": 404,
+        "has_bio": false
+    },
+    "Soundcloud": {
+        "main_url": "https://soundcloud.com/{}",
+        "url": "https://soundcloud.com/{}",
+        "error_type": "status",
+        "error_value": 404,
+        "has_bio": false
     }
 }
